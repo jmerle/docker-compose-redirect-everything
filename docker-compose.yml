@@ -9,7 +9,7 @@ services:
     labels:
       traefik.enable: true
       traefik.frontend.rule: "HostRegexp:${TRAEFIK_HOSTS}"
-    restart: always
+    restart: unless-stopped
 networks:
   web:
     external: true
