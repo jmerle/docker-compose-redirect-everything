@@ -1,6 +1,6 @@
 # Docker Compose Redirect Everything
 
-This is the docker-compose configuration that I use on my DigitalOcean droplet to redirect my secondary domains to my primary one using nginx and [Traefik](https://traefik.io/). It redirects both the root domain and all subdomains to the target domain:
+A docker-compose configuration capable of redirecting secondary secondary domains to a primary one using nginx and [Traefik](https://traefik.io/). It redirects both the root domain and all subdomains to the target domain:
 
 | From | To |
 |------|----|
