@@ -45,5 +45,8 @@ echo "}
 
 events {}" >> "$file"
 
+# Create the Traefik network if it does not exist yet
+docker network inspect $TRAEFIK_NETWORK &>/dev/null || docker network create $TRAEFIK_NETWORK
+
 # Start the container
 docker-compose up -d
