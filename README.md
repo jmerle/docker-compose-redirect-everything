@@ -1,4 +1,4 @@
-# Docker Compose Redirect Everything
+# Traefik Redirect Everything
 
 A docker-compose configuration capable of redirecting secondary secondary domains to a primary one using nginx and [Traefik](https://traefik.io/). It redirects both the root domain and all subdomains to the target domain:
 
